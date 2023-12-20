@@ -8,6 +8,11 @@ jobs:
     container:
       image: debian:11
     steps:
+      - name: Install mpm deps
+        run: |
+          apt update
+          apt install unzip ca-certificates
+
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v2-beta
 
