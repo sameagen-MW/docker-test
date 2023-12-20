@@ -8,6 +8,9 @@ jobs:
     container:
       image: debian:11
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Install mpm deps
         run: |
           apt update
