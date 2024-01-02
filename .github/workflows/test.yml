@@ -14,7 +14,7 @@ jobs:
       - name: Install mpm deps
         run: |
           apt update
-          apt install wget unzip ca-certificates -y
+          apt install unzip ca-certificates -y
 
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v2-beta
