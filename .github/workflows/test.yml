@@ -30,3 +30,6 @@ jobs:
         uses: matlab-actions/run-tests@v1
         with:
           startup-options: -sd startup
+
+      - name: Run build
+        uses: matlab-actions/run-build@v1
