@@ -6,7 +6,7 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     container:
-      image: debian:10
+      image: ubuntu
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -19,9 +19,8 @@ jobs:
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v2-rc0
         with:
-          version: R2021a
-          products: Simulink_Check
-
+          version: R2023b
+          
       - name: Run command
         uses: matlab-actions/run-command@v2-rc0
         with:
