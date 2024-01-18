@@ -22,7 +22,7 @@ jobs:
       - name: Run command
         uses: matlab-actions/run-command@v1
         with:
-          command: disp("Hello Debian!")
+          command: disp("Hello Debian!!")
 
       - name: Run tests
         uses: matlab-actions/run-tests@v1
