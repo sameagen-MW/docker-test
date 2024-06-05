@@ -21,5 +21,10 @@ jobs:
         with:
           release: R2023b
 
+      - name: Test
+        uses: matlab-actions/run-command@v2
+        with:
+          command: disp("hello")
+
       - name: Run process
         uses: matlab-actions/run-tests@v2
