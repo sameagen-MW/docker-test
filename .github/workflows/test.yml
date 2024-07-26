@@ -11,6 +11,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set var
+        run: export TOOLBOX_VER=1.1.1
+
+      - name: echo var
+        run: echo $TOOLBOX_VER
+
       - name: Install mpm deps
         run: |
           apt update
