@@ -28,4 +28,4 @@ jobs:
           release: R2023b
 
       - name: Run process
-        uses: matlab-actions/run-tests@v2
+        uses: matlab-actions/run-build@v2
